@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <EditText
+        android:id="@+id/etNameUpdate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="@string/CustomerName"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEmailUpdate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/etNameUpdate"
+        app:layout_constraintStart_toStartOf="@+id/etNameUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/etNameUpdate" />
+
+    <EditText
+        android:id="@+id/etPhoneUpdate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="@string/Phone"
+        android:inputType="phone"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/etEmailUpdate"
+        app:layout_constraintStart_toStartOf="@+id/etEmailUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailUpdate" />
+
+    <EditText
+        android:id="@+id/etAddressUpdate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="@string/Address"
+        android:inputType="textPostalAddress"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/etPhoneUpdate"
+        app:layout_constraintStart_toStartOf="@+id/etPhoneUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneUpdate" />
+
+    <Switch
+        android:id="@+id/swIsActiveUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/ActiveCustomer"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddressUpdate" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="237dp"
+        android:layout_height="52dp"
+        android:text="@string/Update"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swIsActiveUpdate" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="237dp"
+        android:layout_height="52dp"
+        android:text="@string/Delete"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
